@@ -10,6 +10,9 @@
     <div class="container">
         <h1>Credit Risk Assessment</h1>
         <form id="credit-form" action="/assess-risk" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
             <label for="income">Monthly Income:</label>
             <input type="number" id="income" name="income" required>
 
@@ -24,6 +27,15 @@
 
             <label for="social-media">Social Media Sentiment (e.g., Positive, Neutral, Negative):</label>
             <input type="text" id="social-media" name="social_media_sentiment" required>
+
+            <label for="geolocation">Geolocation:</label>
+            <input type="text" id="geolocation" name="geolocation" required placeholder="City, Country">
+
+            <label for="spending-habits">Spending Habits (e.g., Low, Moderate, High):</label>
+            <input type="text" id="spending-habits" name="spending_habits" required>
+
+            <label for="financial-behavior">Financial Behavior (e.g., Responsible, Average, Risky):</label>
+            <input type="text" id="financial-behavior" name="financial_behavior" required>
 
             <button type="submit">Assess Risk</button>
         </form>
